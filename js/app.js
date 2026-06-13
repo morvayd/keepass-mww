@@ -192,6 +192,9 @@ class KeePassApp {
         
         // Display groups
         this.displayGroups();
+        
+        // Scroll to top to show the unlocked database
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     displayGroups() {
