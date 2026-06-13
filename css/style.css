@@ -50,8 +50,9 @@ body {
 /* Login Screen */
 #login-screen {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: 40px;
 }
 
 /* Main Screen */
