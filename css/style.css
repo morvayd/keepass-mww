@@ -28,8 +28,14 @@ body {
 #app {
     min-height: 100vh;
     position: relative;
-    max-width: 750px;
-    margin: 0 auto;
+}
+
+/* Responsive width: full width on mobile, 750px max on laptop */
+@media (min-width: 501px) {
+    #app {
+        max-width: 750px;
+        margin: 0 auto;
+    }
 }
 
 /* Screens */
