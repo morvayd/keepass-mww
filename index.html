@@ -17,10 +17,7 @@
         <div id="login-screen" class="screen active">
             <div class="container">
                 <div class="logo">
-                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                    </svg>
+                    <img src="icons/icon.png" alt="KeePass-mww Logo" width="80" height="80">
                 </div>
                 <h1>KeePass-mww</h1>
                 <p class="subtitle">Secure Password Viewer</p>
@@ -60,13 +57,20 @@
                 <div class="header-content">
                     <h2 id="db-name">Database</h2>
                     <div class="header-actions">
-                        <button id="search-toggle" class="icon-btn">
+                        <button id="about-btn" class="icon-btn" title="About">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                        </button>
+                        <button id="search-toggle" class="icon-btn" title="Search">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <path d="m21 21-4.35-4.35"></path>
                             </svg>
                         </button>
-                        <button id="lock-btn" class="icon-btn">
+                        <button id="lock-btn" class="icon-btn" title="Lock">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
@@ -98,6 +102,47 @@
                     </button>
                 </div>
                 <div class="modal-body" id="entry-details"></div>
+            </div>
+        </div>
+
+        <!-- About Modal -->
+        <div id="about-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>About KeePass-mww</h3>
+                    <button id="close-about-modal" class="icon-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-color);">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h4 style="text-align: center; margin-bottom: 20px;">KeePass-mww Viewer</h4>
+                    <p style="margin-bottom: 16px; line-height: 1.8;">
+                        This secure password viewer was created by <strong>Daniel Morvay</strong> of
+                        <strong>Morvay Web Works</strong> with assistance from <strong>IBM Bob</strong>.
+                    </p>
+                    <p style="margin-bottom: 16px; line-height: 1.8;">
+                        This application is <strong>safe for all to use</strong>. Your KeePass database files
+                        are processed entirely in your browser - no data is ever sent to any server.
+                    </p>
+                    <div style="background: var(--background); padding: 16px; border-radius: 8px; margin-top: 20px;">
+                        <p style="font-size: 14px; color: var(--text-secondary); margin: 0;">
+                            <strong>Privacy & Security:</strong><br>
+                            • All processing happens locally in your browser<br>
+                            • No data is transmitted to any server<br>
+                            • Your passwords remain completely private<br>
+                            • Open source and transparent
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
