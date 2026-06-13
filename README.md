@@ -14,7 +14,7 @@ A Progressive Web App for viewing KeePassXC databases on your iPhone and other d
 - 💾 Your .kdbx files stay on your phone
 - 🌐 True standalone password manager
 
-See [OFFLINE_GUIDE.md](OFFLINE_GUIDE.md) for complete offline usage details.
+See [OFFLINE_GUIDE.md](OFFLINE_GUIDE.md){:target="_blank"} for complete offline usage details.
 
 ## Features
 
@@ -44,7 +44,7 @@ See [OFFLINE_GUIDE.md](OFFLINE_GUIDE.md) for complete offline usage details.
 
 ### For iPhone Users
 
-1. **Host the app** [https://morvayd.github.io/keepass-mww/](https://morvayd.github.io/keepass-mww/)
+1. **Host the app** [https://morvayd.github.io/keepass-mww/](https://morvayd.github.io/keepass-mww/){:target="_blank"}
 2. **Open Safari** on your iPhone
 3. **Navigate to your hosted URL**
 4. **Tap the Share button** (square with arrow)
@@ -53,7 +53,7 @@ See [OFFLINE_GUIDE.md](OFFLINE_GUIDE.md) for complete offline usage details.
 
 ### For Android Users
 
-1. **Host the app** [https://morvayd.github.io/keepass-mww/](https://morvayd.github.io/keepass-mww/)
+1. **Host the app** [https://morvayd.github.io/keepass-mww/](https://morvayd.github.io/keepass-mww/){:target="_blank"}
 2. **Open Chrome** on your Android device
 3. **Navigate to your hosted URL**
 4. **Tap the menu** (three dots)
@@ -63,7 +63,7 @@ See [OFFLINE_GUIDE.md](OFFLINE_GUIDE.md) for complete offline usage details.
 
 ### Option 1: GitHub Pages (Free & Easy)
 
-**The app will be available at:** [https://morvayd.github.io/keepass-mww/](https://morvayd.github.io/keepass-mww/)
+**The app will be available at:** [https://morvayd.github.io/keepass-mww/](https://morvayd.github.io/keepass-mww/){:target="_blank"}
 
 ### Option 4: Local Testing
 
@@ -74,7 +74,7 @@ cd keepass-mww
 python3 -m http.server 8000
 ```
 
-Then open [http://localhost:8000](http://localhost:8000) in your browser.
+Then open [http://localhost:8000](http://localhost:8000){:target="_blank"} in your browser.
 
 **Note:** PWA features (offline mode, add to home screen) require HTTPS, so local testing won't have full functionality.
 
