@@ -257,6 +257,8 @@ class KeePassApp {
         });
 
         entriesList.querySelector('.back-btn').addEventListener('click', () => {
+            document.getElementById('groups-list').style.display = '';
+            entriesList.classList.remove('active');
             this.displayGroups();
         });
 
@@ -429,6 +431,9 @@ class KeePassApp {
 
         entriesList.querySelector('.back-btn').addEventListener('click', () => {
             document.getElementById('search-input').value = '';
+            document.getElementById('search-bar').classList.remove('active');
+            document.getElementById('groups-list').style.display = '';
+            entriesList.classList.remove('active');
             this.displayGroups();
         });
 
